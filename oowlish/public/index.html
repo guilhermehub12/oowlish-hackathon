@@ -5,241 +5,257 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oowlish Technology</title>
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+  <!-- tailwind  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
   <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
-<body>
+<body class="">
+
   <nav class="p-6 bg-white md:flex md:items-center md:justify-between">
     <div>
       <span class="cursor-pointer">
-        <img class="h-6 inline" src="../src/imgs/oowlish-icon.svg">
+        <img class="h-6 ml-4" src="../src/imgs/oowlish-icon.svg">
       </span>
     </div>
 
     <div class="md:flex md:items-center">
       <ul>
         <li class="mx-4">
-          <a href="#" class="text-l hover:text-cyan-500 duration-500">Our Services</a>
+          <a href="#OurServices" class="text-l hover:text-cyan-500 duration-500">Our Services</a>
         </li>
       </ul>
       <ul>
         <li class="mx-4">
-          <a href="#" class="text-l hover:text-cyan-500 duration-500">About Us</a>
+          <a href="#AboutUs" class="text-l hover:text-cyan-500 duration-500">About Us</a>
         </li>
       </ul>
       <ul>
         <li class="mx-4">
-          <a href="#" class="text-l hover:text-cyan-500 duration-500">Work With Us</a>
+          <a href="#WorkWithUs" class="text-l hover:text-cyan-500 duration-500">Work With Us</a>
         </li>
       </ul>
       <ul>
         <li class="mx-4">
-          <a href="#" class="text-l hover:text-cyan-500 duration-500">Contact Us</a>
+          <a href="#ContactUs" class="text-l hover:text-cyan-500 duration-500">Contact Us</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <section>
-    <div id="default-carousel" class="relative" data-carousel="static">
-      <!-- Carousel wrapper -->
-      <div class="relative h-86 overflow-hidden md:h-96">
-        <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <span
-            class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First
-            Slide</span>
-          <img src="../src/imgs/sliderOne.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+  <section id="Slider">
+
+    <div id="carouselExampleIndicators" class="carousel static relative" data-bs-ride="carousel">
+      <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner relative w-full overflow-hidden">
+        <div class="carousel-item active float-left w-full">
+          <img src="../src/imgs/sliderOne.png" class="block w-full" alt="Wild Landscape" />
         </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="../src/imgs/sliderTwo.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <div class="carousel-item float-left w-full">
+          <img src="../src/imgs/sliderTwo.png" class="block w-full" alt="Camera" />
         </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="../src/imgs/sliderThree.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <div class="carousel-item float-left w-full">
+          <img src="../src/imgs/sliderThree.png" class="block w-full" alt="Exotic Fruits" />
         </div>
       </div>
-      <!-- Slider indicators -->
-      <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
-          data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-          data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-          data-carousel-slide-to="2"></button>
-      </div>
-      <!-- Slider controls -->
-      <button type="button"
-        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev>
-        <span
-          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-          </svg>
-          <span class="sr-only">Previous</span>
-        </span>
+      <button
+        class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+        type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <button type="button"
-        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next>
-        <span
-          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-          <span class="sr-only">Next</span>
-        </span>
+      <button
+        class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+        type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
       </button>
     </div>
+
   </section>
 
-  <section class="">
-    <div class="justify-center bg-gray text-white">
+  <section id="How">
+    <div class="bg-gray text-white">
       <div class="mb-10 pt-4">
-        <h2 class="text-5x1 font-semibold">How do we do it?</h2>
+        <h2 class="text-7xl font-semibold">How do we do it?</h2>
       </div>
 
-      <div class="flex">
+      <div class="">
         <div class="mx-2">
-          <div class="mb-10">
-            <h4 class="mb-2">End-to-End solutions</h4>
-            <p>Everything you need to launch new digital products and services. Software development, UX/UI, Product
+          <div class="bg-red-500 mb-10 grid grid-1 m-auto justify-center">
+            <h4 class="mb-2 text-2xl">End-to-End solutions</h4>
+            <p class="mb-8">Everything you need to launch new digital products and services. Software development,
+              UX/UI,
+              Product
               Management, Devops, QA, etc.</p>
-          </div>
 
-          <div class="mb-10">
-            <h4 class="mb-2">Highly engaged talent</h4>
-            <p>Our team becomes part of yours. We are committed to being an integral part of your success and to making
+            <h4 class="mb-2 text-2xl">Highly engaged talent</h4>
+            <p class="mb-8">Our team becomes part of yours. We are committed to being an integral part of your success
+              and to making
               things right.</p>
-          </div>
 
-          <div class="mb-10">
-            <h4 class="mb-2">Just one screen away</h4>
-            <p>We are a near-shore firm that works in your time-zone, speaks your language and uses your communication
+            <h4 class="mb-2 text-2xl">Just one screen away</h4>
+            <p class="mb-8">We are a near-shore firm that works in your time-zone, speaks your language and uses your
+              communication
               channels to make collaboration fast, simple and convenient.</p>
-          </div>
 
-          <div class="mb-10">
-            <h4 class="mb-2">Tailored to your needs</h4>
-            <p>
-              We adapt to your workflow and preferred collaboration tools and can contribute with our experience in
+            <h4 class="mb-2 text-2xl">Tailored to your needs</h4>
+            <p class="mb-8">
+              We adapt to your workflow and preferred collaboration tools and can contribute with our
+              experience in
               Agile methodologies, when needed.
             </p>
           </div>
-        </div>
 
-        <img class="justify-right" width="480px" height="640" src="../src/imgs/ilustrationOne.svg" alt="Ilustration">
-      </div>
-    </div>
-
-    <div class="flex bg-white font-black p-4 justify-between">
-      <div class="">
-        <h2 class="text-5x1 font-semibold text-left">Our Mission</h2>
-        <p class="font-medium">To give every company the opportunity to innovate by identifying, training and retaining
-          the best tech & <br>
-          digital talent in developing countries, then deploy them with precision in ways that exceeds our client’s
-          expectations</p>
-      </div>
-      <img class="justify-right" src="../src/imgs/IllustrationMission.svg" alt="">
-    </div>
-
-    <div class="bg-gray">
-      <div class="text-white justify-center text-center pt-10 pb-10">
-        <h2>Our Services</h2>
-        <p>End-To-End Innovation Enablers, helping your company
-          unlock it’s full innovation potential.</p>
-      </div>
-
-      <div class="grid justify-center m-auto pb-8">
-
-        <div class="flex text-center ">
-          <a href="#"
-            class="block p-6 mr-4 max-w-sm bg-gray-light rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Dedicated Tech (full/partial)
-              Squads</h5>
-            <p class="font-normal text-white dark:text-gray-400">We create multi-disciplinary, remote (near-shore) Tech
-              Squads that become part of your team and are trained on Agile methodologies to deliver continuous value.
-              Well-trained remote teams bring clients the opportunity to increase innovation output by accessing a
-              greater / more diverse pool of talent, while reducing the cost of development</p>
-          </a>
-
-
-          <a href="#"
-            class="block p-6 mr-4 max-w-sm bg-gray-light rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">On-Demand Software Development
-            </h5>
-            <p class="font-normal text-white dark:text-gray-400">At our core, we are software developers excited about
-              building digital products and solutions using the latest technologies and agile methodologies. We provide
-              end-to-end capabilities to deliver on your technical requests. Product Management, Tech Architecture,
-              Front / Back End Development, DevOps & QA.</p>
-          </a>
-
-
-          <a href="#"
-            class="block p-6 max-w-sm bg-gray-light rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Venture Building</h5>
-            <p class="font-normal text-white dark:text-gray-400">We partner with companies to co-launch new digital
-              businesses that leverage core assets of the company (distribution channels, customer base, industry
-              knowledge,… etc). We take the co-created ideas into Most Lovable Products aiming to find product market
-              fit and scale in a lean way. As startup founders ourselves, we love getting things from 0 to 1..</p>
-          </a>
-        </div>
-
-
-      </div>
-    </div>
-  </section>
-
-
-  <footer class="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900">
-    <div class="sm:flex sm:items-center sm:justify-between">
-      <a href="https://oowlish.com/" class="items-center mb-4 sm:mb-0">
-        <img src="../src/imgs/oowlish-icon.svg" class="mr-3 h-6" alt="Flowbite Logo" />
-        <span class="">Because our mission is to give every company, no matter the size, the opportunity to innovate and
-          help build a better future.</span>
-      </a>
-      <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-900 sm:mb-0 dark:text-gray-400">
-        <li>
-          <a href="#" class="mr-4 hover:underline md:mr-6 ">Our Services</a>
-        </li>
-        <li>
-          <a href="#" class="mr-4 hover:underline md:mr-6">About Us</a>
-        </li>
-        <li>
-          <a href="#" class="mr-4 hover:underline md:mr-6 ">Work With Us</a>
-        </li>
-        <li>
-          <a href="#" class="hover:underline">Contact Us</a>
-        </li>
-      </ul>
-
-      <div class="">
-        <span class="text-right">Follow Us</span>
-        <div class="flex m-2">
-          <a href="">
-            <img src="../src/imgs/Facebook.svg" alt="">
-          </a>
-          <a href="">
-            <img src="../src/imgs/Instagram.svg" alt="">
-          </a>
-          <a href="">
-            <img src="../src/imgs/LinkedIn.svg" alt="">
-          </a>
+          <div class="bg-yellow-500">
+            <img class="" width="400px" src="../src/imgs/ilustrationOne.svg" alt="Ilustration">
+          </div>
         </div>
       </div>
     </div>
-  </footer>
+
+    <section id="OurMission">
+      <div class="flex bg-white font-black p-4 justify-between">
+        <div class="">
+          <h2 class="text-7xl font-semibold text-left">Our Mission</h2>
+          <p class="font-medium">To give every company the opportunity to innovate by identifying, training
+            and retaining
+            the best tech & <br>
+            digital talent in developing countries, then deploy them with precision in ways that exceeds our
+            client’s
+            expectations</p>
+        </div>
+        <img class="justify-right" src="../src/imgs/IllustrationMission.svg" alt="">
+      </div>
+    </section>
+
+    <section id="OurServices">
+      <div class="bg-gray">
+        <div class="text-white bg-red-500 justify-center text-center pt-10 pb-10">
+          <h2 class="text-7xl font-semibold">Our Services</h2>
+          <p class="">End-To-End Innovation Enablers, helping your company
+            unlock it’s full innovation potential.</p>
+        </div>
+
+        <div class="bg-green-500 pt-6 mb-12 grid justify-center m-auto pb-8">
+
+          <div class="flex text-center ">
+            <a href="#"
+              class="block p-6 mr-4 max-w-sm bg-gray-light rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Dedicated Tech
+                (full/partial)
+                Squads</h5>
+              <p class="font-normal text-white">We create multi-disciplinary, remote
+                (near-shore) Tech
+                Squads that become part of your team and are trained on Agile methodologies to deliver
+                continuous value.
+                Well-trained remote teams bring clients the opportunity to increase innovation output by
+                accessing a
+                greater / more diverse pool of talent, while reducing the cost of development</p>
+            </a>
 
 
-  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+            <a href="#"
+              class="block p-6 mr-4 max-w-sm bg-gray-light rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">On-Demand
+                Software Development
+              </h5>
+              <p class="font-normal text-white">At our core, we are software developers
+                excited about
+                building digital products and solutions using the latest technologies and agile
+                methodologies. We provide
+                end-to-end capabilities to deliver on your technical requests. Product Management, Tech
+                Architecture,
+                Front / Back End Development, DevOps & QA.</p>
+            </a>
+
+
+            <a href="#"
+              class="block p-6 max-w-sm bg-gray-light rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Venture
+                Building</h5>
+              <p class="font-normal text-white">We partner with companies to co-launch
+                new digital
+                businesses that leverage core assets of the company (distribution channels, customer
+                base, industry
+                knowledge,… etc). We take the co-created ideas into Most Lovable Products aiming to find
+                product market
+                fit and scale in a lean way. As startup founders ourselves, we love getting things from
+                0 to 1..</p>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section id="AboutUs">
+
+    </section>
+
+
+
+    <footer class="p-14 text-black">
+
+      <div class="bg-red-500 mx-8 py-10 text-center ">
+        <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="md:text-left">
+            <img src="../src/imgs/oowlish-icon.svg" class="mr-3 h-8" alt="Flowbite Logo" />
+            <p>
+              Because our mission is to give every company, no matter the size, the opportunity to innovate and
+              help build a better future.
+            </p>
+          </div>
+
+          <div class="bg-green-500 flex m-auto">
+            <p class="mr-4">
+              <a href="#!" class="">Our Services</a>
+            </p>
+            <p class="mr-4">
+              <a href="#!" class="">About Us</a>
+            </p>
+            <p class="mr-4">
+              <a href="#!" class="">Work With Us</a>
+            </p>
+            <p class="">
+              <a href="#!" class="">Contact Us</a>
+            </p>
+          </div>
+
+          <div class="bg-yellow-500">
+            <h6 class="uppercase font-semibold mb-4 flex justify-right md:justify-right">
+              Follow Us
+            </h6>
+            <div class="flex m-2">
+              <a href="">
+                <img src="../src/imgs/Facebook.svg" alt="">
+              </a>
+              <a href="">
+                <img src="../src/imgs/Instagram.svg" alt="">
+              </a>
+              <a href="">
+                <img src="../src/imgs/LinkedIn.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 
 </body>
 
