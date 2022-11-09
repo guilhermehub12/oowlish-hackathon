@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body class="">
@@ -168,7 +168,7 @@
       </div>
     </div>
 
-    <section id="OurMission" class="pt-32 pb-32 pl-20 pr-20">
+    <section id="OurMission" class="px-20 py-32">
       <div class=" flex bg-white font-black items-center justify-between">
         <div class="">
           <h2 class="text-7xl font-semibold text-left mb-4">Our Mission</h2>
@@ -245,51 +245,66 @@
     </section>
 
     <section id="AboutUs">
+      
+    </section>
 
+    <section id="WeAreReady" class="text-white">
+      <div class="relative w-full">
+        <div class="relative bg-no-repeat bg-cover">
+          <img src="./src/imgs/WeAreReady.png" class="block w-full" />
+          <div class="absolute w-full h-full"></div>
+        </div>
+        <div class="carousel-caption mb-40 md:block absolute text-center">
+          <h2 class="text-5xl">We are ready, are you?</h2>
+          <div class="mt-20">
+            <button type="button" href="" class="btn w-fit inline-block px-16 py-6 bg-orange-600 font-medium text-2xl rounded-md shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out">Contact Us</button>
+          </div>
+        </div>
+      </div>
     </section>
 
 
 
-    <footer class="p-14 text-black">
+    <footer class="text-black relative">
 
-      <div class="bg-red-500 mx-8 py-10 text-center ">
-        <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="md:text-left">
-            <img src="../src/imgs/oowlish-icon.svg" class="mr-3 h-8" alt="Flowbite Logo" />
+      <div class="pr-20 pl-20">
+        <div class="pt-16 pb-16 grid grid-cols-3 gap-8 m-auto justify-between">
+          <div class="md:text-left w-11/12 bg-gray">
+            <img src="../src/imgs/oowlish-icon.svg" class="mr-3 h-8" alt="Oowlish Logo" />
             <p>
               Because our mission is to give every company, no matter the size, the opportunity to innovate and
               help build a better future.
             </p>
           </div>
 
-          <div class="bg-green-500 flex m-auto">
-            <p class="12">
+          <div class="bg-green-500 flex m-auto gap-4">
+            <p>
               <a href="#!" class="">Our Services</a>
             </p>
-            <p class="mr-4">
+            <p>
               <a href="#!" class="">About Us</a>
             </p>
-            <p class="mr-4">
+            <p>
               <a href="#!" class="">Work With Us</a>
             </p>
-            <p class="">
+            <p>
               <a href="#!" class="">Contact Us</a>
             </p>
           </div>
 
-          <div class="bg-yellow-500">
-            <h6 class="uppercase font-semibold mb-4 flex justify-right md:justify-right">
+          <div class="bg-yellow-500 w-max">
+            <h6 class="font-normal flex justify-end md:justify-end">
               Follow Us
             </h6>
-            <div class="flex m-2">
-              <a href="">
-                <img src="../src/imgs/Facebook.svg" alt="">
+            <div class="flex pt-2 justify-end md:justify-end gap-2">
+              <a href="#">
+                <img src="./src/imgs/Facebook.svg" alt="">
               </a>
-              <a href="">
-                <img src="../src/imgs/Instagram.svg" alt="">
+              <a href="#">
+                <img src="./src/imgs/Instagram.svg" alt="">
               </a>
-              <a href="">
-                <img src="../src/imgs/LinkedIn.svg" alt="">
+              <a href="#">
+                <img src="./src/imgs/LinkedIn.svg" alt="">
               </a>
             </div>
           </div>
